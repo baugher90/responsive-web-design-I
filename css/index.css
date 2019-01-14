@@ -25,13 +25,12 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers - change made*/
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-    display: flex;
 	line-height: 1;
 }
 ol, ul {
@@ -50,175 +49,144 @@ table {
 	border-spacing: 0;
 }
 
+/* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
 }
 
 html, body {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
     margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
-}
-
-p {
-    line-height: 1.4;
 }
 
 .container {
-    width: 800px;
-    margin: 0 auto;
-}
-/* top-content */
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 800px;
-    margin: auto;
-    display: flex;
-}
-.nav-bar nav a {
-    color: black;
-    padding: 10px 35px;
-    text-decoration: none;
-    align-self: center;
-}
-img.top-img {
-    margin: 20px 0;
-}
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 20px 0;
-    border-bottom: 1px dashed black;
+  width: 880px;
+  /* TB LR */
+  margin: 0 auto;
 }
 
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
-}
- /* middle- content */
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+/* header */
+
+header nav {
+  display: inline-block;
+  width: 691px;
+  vertical-align: top;
+  margin-top: 35px;
 }
 
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+header nav a {
+  display: inline-block;
+  margin-right: 65px;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
 }
 
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+header nav a:hover {
+  text-decoration: underline;
 }
 
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#one {
-    background: teal;
-}
-#two {
-    background: gold;
-}
-#three {
-    background: cadetblue;
-}
-#four {
-    background: coral;
-}
-#five {
-    background: crimson;
-}
-#six {
-    background: forestgreen;
-}
-#seven {
-    background: darkorchid;
-}
-#eight {
-    background: hotpink;
-}
-#nine {
-    background: indigo;
-}
-#ten {
-    background: dodgerblue;
-}
-.bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+header nav a:first-child {
+  margin-left: 0;
 }
 
-.bottom-content .text-container {
-    padding-right: 4%;
+header nav a:last-child {
+  margin-right: 0;
 }
 
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+header .logo {
+  display: inline-block;
+  margin-top: 25px;
+}
+
+/* cta */
+
+.cta .cta-text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px;
+}
+
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+  display: inline-block;
+  margin-top: 69px;
+}
+
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+
+.main-content .top-content {
+  padding: 0 10px;
+}
+
+.main-content .top-content .text-content {
+  width: 410px;
+  display: inline-block;
+  margin-right: 34px;
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .middle-img {
+  margin-top: 45px;
+}
+
+.main-content .bottom-content {
+  margin-top: 37px;
+  padding: 0 10px;
+}
+
+.main-content .bottom-content .text-content {
+  width: 275px;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
 }
 
 footer {
-    width: 100%;
-    background: black;
-}
-
-footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
-}
-
-footer nav a {
-    color: white;
-    text-decoration: none;
-}
-
-/*about page*/
-
-.container .about-page .middle-content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.about-page .middle-content{
-    border: 1px solid white;
-}
-
-.about-page .middle-content .text-container {
-    width: 370px;
-    padding: 10px 0 10px;
-    margin: 0 10px;
-    display: inline-block;
-    border-bottom: 1px dashed black;
-}
-.about-page .middle-content .text-container img{
-    margin: 10px 0;
-    
-}
-.about-page .middle-content .text-container button{
-    border: 1px solid black;
-    padding: 5px 15px;
-    margin: 10px 0;
-
-
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
 }
