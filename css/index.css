@@ -147,7 +147,7 @@ header .logo {
 @media(max-width:800px){
     .cta .cta-text {
         width:100%; 
-        margin: 50px auto 20px;
+        margin: 45px auto 20px;
         padding: auto;
 }
 
@@ -182,7 +182,9 @@ header .logo {
   padding-top: 39px;
 }
 @media(max-width:800px){
-    margin-top: 30px;
+    .main-content {
+        margin-top: 20px;
+    }
 }
 .main-content .top-content {
   padding: 0 10px;
@@ -202,8 +204,8 @@ header .logo {
     .main-content .top-content .text-content {
         display: inline-block;
         width: 45%;
-        margin: 2.5%;
-        
+        margin: 0 2.5% 2.5%;
+        padding-top:         
     }
 }
 
@@ -213,7 +215,7 @@ header .logo {
 @media(max-width: 800px){
     .main-content .top-content .text-content:last-child {
         width: 45%;
-        margin: 2.5%
+        margin: 0 2.5% 2.5%;
     }
 }
 
@@ -222,7 +224,9 @@ header .logo {
 }
 @media(max-width: 800px){
     .main-content .middle-img {
-        margin-top: 10px;
+        width: 95%;
+        height: 95%;
+        margin: 2.5%;
       }
 }
 
@@ -233,6 +237,7 @@ header .logo {
 @media(max-width: 800px){
     .main-content .bottom-content{
         display: flex;
+        margin:10px;
     }
 }
 
@@ -240,6 +245,11 @@ header .logo {
   width: 275px;
   display: inline-block;
   margin-right: 12px;
+}
+@media(max-width: 800px){
+    .main-content .bottom-content .text-content{
+        margin: 0 10px;
+    }
 }
 
 .main-content .bottom-content .text-content:last-child {
